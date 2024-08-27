@@ -1,3 +1,4 @@
+import { transform } from "framer-motion"
 import type { Config } from "tailwindcss"
 
 const config = {
@@ -59,6 +60,14 @@ const config = {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        "fade-in": {
+          from: {
+            opacity: '0'
+          },
+          to: {
+            opacity: '1'
+          },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -86,9 +95,17 @@ const config = {
           to: {
             "backgroundPosition": "-200% 0"
           }
+        },
+        marquee: {
+          '100%': {
+            transform: 'translateY(-50%)'
+          }
         }
       },
       animation: {
+        "marquee": "marquee var(--marquee-duration) linear infinite",
+        "fade-in": "fade-in 0.5s linear forwards",
+
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
 

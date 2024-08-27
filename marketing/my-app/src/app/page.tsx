@@ -1,8 +1,9 @@
 import Navbar from "@/components/navbar";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Image from "next/image";
-import { Icon, Star } from "lucide-react";
+import { Check, Icon, Star } from "lucide-react";
 import { Icons } from "@/components/Icons";
+import { Reviews } from "@/components/Reviews";
 
 export default function Home() {
   return (
@@ -45,11 +46,48 @@ export default function Home() {
                 </p>
               </div>
               <div className='flex gap-4 mt-2'>
-                <img className='rounded-full h-12 w-12 object-cover' src="/users/user-1"/>
+                <img className='rounded-full h-12 w-12 object-cover' src="/users/user-0.png" alt="user"/>
+                <div className='flex flex-col'>
+                  <p className='font-semibold'>Jonathan</p>
+                  <div className='flex gap-1.5 items-center text-zinc-600'>
+                    <Check className='h-4 w-4 stroke-[3px] text-green-600' />
+                    <p className='text-sm'>Verified Appointment</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* second user review */}
+            <div className='flex flex-auto flex-col gap-4 lg:pr-8 xl:pr-20'>
+              <div className='flex gap-0.5 mb-2'>
+                <Star className='h-5 w-5 text-orange-500 fill-orange-400' />
+                <Star className='h-5 w-5 text-orange-500 fill-orange-400' />
+                <Star className='h-5 w-5 text-orange-500 fill-orange-400' />
+                <Star className='h-5 w-5 text-orange-500 fill-orange-400' />
+                <Star className='h-5 w-5 text-orange-500 fill-orange-400' />
+              </div>
+              <div className='text-lg leading-8'>
+                <p>
+                  "If somebody else was to advise me on using a marketing company for my business exposure I would not believe but this marketing company proved me wrong.<span className='p-0.5 bg-slate-800 text-white'>Thanks to Joy's Enterprise </span>my company still stands strong"
+                </p>
+              </div>
+              <div className='flex gap-4 mt-2'>
+                <img className='rounded-full h-12 w-12 object-cover' src="/users/user-1.png" alt="user"/>
+                <div className='flex flex-col'>
+                  <p className='font-semibold'>Nelson</p>
+                  <div className='flex gap-1.5 items-center text-zinc-600'>
+                    <Check className='h-4 w-4 stroke-[3px] text-green-600' />
+                    <p className='text-sm'>Verified Appointment</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </MaxWidthWrapper>
+
+        <div className='pt-16'>
+          <Reviews />
+        </div>
       </section>
     </div>
   );
