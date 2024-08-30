@@ -36,7 +36,7 @@ const Navbar = async () => {
                                     Dashboard
                                 </Link>
                             ) : null}
-                            <Link href='/api/auth/login' className={buttonVariants({
+                            <Link href='/configure/upload' className={buttonVariants({
                                 size: 'sm',
                                 className: 'hidden sm:flex items-center gap-1',
                             })}>

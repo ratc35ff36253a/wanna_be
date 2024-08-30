@@ -1,9 +1,11 @@
 import Navbar from "@/components/navbar";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import Image from "next/image";
-import { Check, Icon, Star } from "lucide-react";
+import { ArrowRight, Check, Icon, Link, Star } from "lucide-react";
 import { Icons } from "@/components/Icons";
 import { Reviews } from "@/components/Reviews";
+import Creator from "@/components/Creator";
+import { buttonVariants } from "@/components/ui/button";
 
 export default function Home() {
   return (
@@ -88,6 +90,42 @@ export default function Home() {
         <div className='pt-16'>
           <Reviews />
         </div>
+      </section>
+      <section>
+        <MaxWidthWrapper className='py-24'>
+          <div className='mb-12 px-6 lg:px-8'>
+            <div className='mx-auto max-w-2xl sm:text-center'>
+              <h2 className='order-1 mt-2 tracking-tight text-center text-balance !leading-tight font-bold text-5xl md:text-6xl text-gray-900'>
+                Book an appointment and {''}<span className='relative px-2 bg-green-600 text-white'>increase your products </span>sales
+              </h2>
+            </div>
+          </div>
+
+          <div className='relative h-80 md:h-full w-full max-w-sm mx-auto rounded-xl bg-gray-900/5 ring-inset ring-gray-900/10
+            lg:rounded-2xl flex items-center justify-center'>
+              <img src="/bronchure-1.jpg" className='rounded-md object-cover shadow-2xl ring-1 ring-gray-900/10 h-full w-full' alt='bronchure image'/>
+          </div>
+
+          <ul className='mx-auto mt-12 max-w-prose sm:text-lg space-y-2 w-fit'>
+            <li className='w-fit'>
+              <Check className='h-5 w-5 text-green-600 inline mr-1.5' />
+              State of the art content creativity
+            </li>
+            <li className='w-fit'>
+              <Check className='h-5 w-5 text-green-600 inline mr-1.5' />
+              Your business on adverts
+            </li>
+            <li className='w-fit'>
+              <Check className='h-5 w-5 text-green-600 inline mr-1.5' />
+              Exposure on every social media platform
+            </li>
+            <li className='w-fit'>
+              <Check className='h-5 w-5 text-green-600 inline mr-1.5' />
+              Bringing your imagination into reality
+            </li>
+            
+          </ul>
+        </MaxWidthWrapper>
       </section>
     </div>
   );
