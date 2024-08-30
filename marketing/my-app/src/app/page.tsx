@@ -1,11 +1,11 @@
-import Navbar from "@/components/navbar";
-import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import MaxWidthWrapper from "@/src/components/MaxWidthWrapper";
 import Image from "next/image";
-import { ArrowRight, Check, Icon, Link, Star } from "lucide-react";
-import { Icons } from "@/components/Icons";
-import { Reviews } from "@/components/Reviews";
-import Creator from "@/components/Creator";
-import { buttonVariants } from "@/components/ui/button";
+import { ArrowRight, Check, Icon, Star } from "lucide-react";
+import Link from "next/link";
+import { Icons } from "@/src/components/Icons";
+import { Reviews } from "@/src/components/Reviews";
+import Creator from "@/src/components/Creator";
+import { buttonVariants } from "@/src/components/ui/button";
 
 export default function Home() {
   return (
