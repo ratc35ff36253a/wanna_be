@@ -1,7 +1,6 @@
 import MaxWidthWrapper from "@/src/components/MaxWidthWrapper";
 import Image from "next/image";
 import { ArrowRight, Check, Icon, Star } from "lucide-react";
-import Link from "next/link";
 import { Icons } from "@/src/components/Icons";
 import { Reviews } from "@/src/components/Reviews";
 import Creator from "@/src/components/Creator";
